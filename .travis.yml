@@ -1,0 +1,22 @@
+language: java
+sudo: enable
+jdk:
+  - oraclejdk8
+
+cache:
+  directories:
+  - '$HOME/.m2/repository'
+
+script:
+  - mvn clean package -DskipTests=true
+
+branches:
+  only:
+    - master
+
+notifications:
+  email: false
+
+env:
+  global:
+    - GH_REF=github.com/zheng-zy/test-travis-ci-maven.git
