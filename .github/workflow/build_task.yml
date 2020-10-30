@@ -2,7 +2,7 @@ name: build_task
 
 on:
   push:
-    branched: main
+    branched: master
 
 jobs:
   start:
