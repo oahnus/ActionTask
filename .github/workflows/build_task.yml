@@ -4,7 +4,7 @@ on:
   push:
     branched: master
   schedule:
-    - cron: '45 7 * * *'
+    - cron: '0 2 * * *'
       # cron表达式，Actions时区是UTC时间，所以上午9点要往前推8个小时
 
 jobs:
