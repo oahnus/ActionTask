@@ -22,6 +22,7 @@ public class MainApp {
     private static final String BING_BASE = "https://www.bing.com";
 
     private static boolean dingNotify(String title, String mdContent) {
+        // refresh
         try {
             String body = String.format("{\"msgtype\": \"markdown\",\"markdown\": {\"title\": \"%s\",\"text\": \"%s\"}}", "Action-" + title, mdContent);
             Response response = new FastHttpClientBuilder().build()
